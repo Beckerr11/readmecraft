@@ -1,25 +1,24 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "files": {
-    "include": [
-      "src/**/*.ts",
-      "src/**/*.tsx",
-      "src/**/*.d.ts",
-      "src/setupTests.ts",
-      "vite.config.ts"
-    ],
-    "ignore": [
-      "dist/**",
-      "node_modules/**"
-    ]
-  },
-  "formatter": {
-    "enabled": true
-  },
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true
-    }
-  }
+    "$schema":  "https://biomejs.dev/schemas/2.4.9/schema.json",
+    "files":  {
+                  "includes":  [
+                                   "src/**/*.ts",
+                                   "src/**/*.tsx",
+                                   "src/**/*.d.ts",
+                                   "src/setupTests.ts",
+                                   "vite.config.ts",
+                                   "!dist",
+                                   "!node_modules"
+                               ]
+              },
+    "formatter":  {
+                      "enabled":  true
+                  },
+    "linter":  {
+                   "enabled":  true,
+                   "rules":  {
+                                 "recommended":  true
+                             }
+               }
 }
+
