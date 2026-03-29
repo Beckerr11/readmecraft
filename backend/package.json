@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "douglasdev-platform": "file:../../..",
     "express": "^5.1.0",
     "helmet": "^8.1.0",
     "pino": "^10.3.1",
