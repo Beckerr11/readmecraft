@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: readmecraft-api
+    env: node
+    rootDir: backend
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm run start
+    healthCheckPath: /health
+  - type: static
+    name: readmecraft-web
+    rootDir: frontend
+    buildCommand: npm ci --include=dev && npm run build
+    staticPublishPath: dist

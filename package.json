@@ -1,0 +1,16 @@
+{
+  "name": "readmecraft",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "bootstrap": "npm --prefix backend install --include=dev && npm --prefix frontend install --include=dev",
+    "dev": "concurrently -n BACKEND,FRONTEND -c cyan,magenta \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "lint": "npm --prefix backend run lint && npm --prefix frontend run lint",
+    "test": "npm --prefix backend run test && npm --prefix frontend run test",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build",
+    "quality": "npm run lint && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
