@@ -1,1 +1,22 @@
-{ "$schema":"https://biomejs.dev/schemas/1.9.4/schema.json","formatter":{"enabled":true},"linter":{"enabled":true,"rules":{"recommended":true}} }
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "files": {
+    "include": [
+      "src/**/*.ts",
+      "tests/**/*.ts"
+    ],
+    "ignore": [
+      "dist/**",
+      "node_modules/**"
+    ]
+  },
+  "formatter": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true
+    }
+  }
+}
