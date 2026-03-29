@@ -1,28 +1,35 @@
 # ReadmeCraft
 
-Editor profissional para README com preview e padrao senior.
+Produto real da DouglasDev para operacao de secoes com painel interativo full stack.
 
-## Problema
-Repositorios perdem credibilidade por documentacao inconsistente.
+## O que este repositorio entrega
+- API Node/Express com validacao de entrada via Zod.
+- Persistencia local de dados em arquivo (modo desenvolvimento/producao).
+- Filtros reais por status, prioridade e busca textual.
+- Exportacao CSV para analise operacional.
+- Frontend React responsivo com feedback de carregamento/erro e interacoes completas.
 
-## Publico
-Devs individuais, maintainers OSS e times de engenharia.
+## Fluxo operacional
+1. Criar secao com objetivo e publico alvo.
+2. Revisar qualidade tecnica e legibilidade final.
+3. Concluir melhoria e publicar atualizacao.
 
-## MVP
-- Templates por tipo de projeto e maturidade.
-- Preview markdown em tempo real.
-- Gerador de badges e secoes tecnicas.
-- Exportacao pronta para GitHub.
-
-## Stack
-- React + TypeScript + Vite
-- Node + Express + TypeScript
-- CI com lint/test/build/audit
+## Endpoints principais
+- `GET /health`
+- `GET /api/meta`
+- `GET /api/work-items`
+- `GET /api/work-items/export.csv`
+- `POST /api/work-items`
+- `PATCH /api/work-items/:id/toggle`
+- `DELETE /api/work-items/:id`
 
 ## Setup
-1. npm install --include=dev
-2. npm run bootstrap
-3. npm run dev
+1. `npm install --include=dev`
+2. `npm run bootstrap`
+3. `npm run dev`
 
-## Monetizacao
-Plano pro com templates premium.
+## Qualidade
+- `npm run quality` executa lint + testes + build no backend e frontend.
+
+## Marca
+DouglasDev
